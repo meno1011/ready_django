@@ -3,15 +3,12 @@ class Car():
     doors = 4
     windows = 4
     seats = 4
+    
+    def start(potato):
+        #method
+        print(potato.color)
+        print("I started")
 
 porche = Car()
-porche.color = "Red"
-
-print(porche.doors)
-print(porche.color)
-
-ferrari = Car()
-ferrari.color = "Yellow"
-
-print(ferrari.doors)
-print(ferrari.color)
+porche.color = "Red Apple Red"
+porche.start()
