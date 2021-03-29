@@ -1,9 +1,17 @@
-def plus (*args):
-    result = 0;
-    for number in args:
-        result += number
-    print(result)
-    return result
-# *args, **args 
-plus(1, 2, 1,1,1,1,1,1,3,4,2345,35,2)
+class Car():
+    wheels = 4
+    doors = 4
+    windows = 4
+    seats = 4
 
+porche = Car()
+porche.color = "Red"
+
+print(porche.doors)
+print(porche.color)
+
+ferrari = Car()
+ferrari.color = "Yellow"
+
+print(ferrari.doors)
+print(ferrari.color)
