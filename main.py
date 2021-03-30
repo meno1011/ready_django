@@ -21,8 +21,21 @@ class Car():
     def __str__(self):
         return f"Car with {self.wheels} wheels"
 
-porche = Car(color = "GREEN", price = "$40")
-print(porche.color , porche.price)
+    def take_off(self):
+        return "taking off"
 
-mini = Car()
-print(mini.color, mini.price)
+class Convertible(Car):
+
+    def __init__(self, **kwargs):
+        #super는 부모클래스의 method를 호출할때 쓰는 함수이다.
+        super().__init__(**kwargs)
+        self.time = kwargs.get("time", 10)
+
+    def take_off(self):
+        return "taking off"
+
+    def __str__(self):
+        return f"Car with no roof"
+
+porche = Convertible(color = "GREEN", price = "$40")
+print(porche.color)
